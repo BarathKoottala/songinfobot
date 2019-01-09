@@ -6,7 +6,7 @@ import lyricsgenius as genius
 #reddit api login
 #app developed under the projectpersonal reddit account
 
-reddit = praw.Reddit(client_id="Y4qCULosW04Ozw", client_secret ="kssQaeqJJNiP7oXlf9nkfTTqbEs", username="songinfobot", password="Ragi1226!", user_agent="songinfobot")
+reddit = praw.Reddit(client_id="******", client_secret ="******", username="******", password="******", user_agent="******")
 					
 #subreddits that bot interacts with
 subreddit = reddit.subreddit("drizzy")
@@ -16,7 +16,7 @@ keyphrase = "!songinfobot"
 		
 
 def getSongInfo(song_title):
-	api = genius.Genius("4WNXyCz9LKmUBaGCkvMA0DTTbLQABKi1r6SamIY8TJubG9Q_v3ZgctwHO9i98-Hs")
+	api = genius.Genius("******")
 	artist_name =  "Drake"
 	song_response = api.search_song(song_title, artist_name)
 	if song_response:
